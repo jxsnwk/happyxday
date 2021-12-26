@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+  html {
+  overflow-y: scroll;
+  }
+  
+  body {
+  background:#FFF;
+  color:#000;
+  font-size:13px;
+  line-height:1.7em;
+  }
+  
+  /* リンク設定 */
+  a{color:#77919d;text-decoration:none;}
+  a:link {color:#77919d;border-bottom: 1px dotted #666;}
+  a:hover {color: #c9c9c2;border:none;}
+  
+  a img{border-style:none;}
+   
+  br{letter-spacing:0;}
+   
+  /* リスト設定 */
+  ul,li {
+  list-style: none;
+  }
+   
+  /* 画像のボーダーをあらかじめ０にする */
+  img{border:none;max-width: 100%;height:auto;}
+   
+  /* フォーム関連の設定 */
+  textarea{
+  font-size:16px;
+  line-height:1.7em;
+  padding:2px 5px;
+  border: 1px #888 solid;
+  background-color : #fff;
+  }
+  
+  input,select{
+  padding:2px 5px;
+  border: 1px #888 solid;
+  background-color : #fff;
+  }
+   
+  /*--------------------------------------------------------
+  基本
+  --------------------------------------------------------*/
+   
+  /* ---横幅の設定ここから--- */
+  @media only screen and (min-width:540px) {
+   
+  body {
+  width: 540px;
+  margin: auto;
+  padding:5px;
+  }
+  
+  }
+  @media only screen and (max-width:540px) {
+   
+  body {
+  margin:auto;
+  padding:5px
+  }
+  
+  }
+  /* ---横幅の設定ここまで--- */
+   
+   
+  k{color:#000;}
+  ruby {ruby-position: inline; ruby-overhang:auto;}
+  
+  /*---top----*/
+@media only screen and (min-width:600px) {
+  
+.main{
+  width: 600px;
+  margin: 20px auto;
+  padding:60px 40px;
+  }
+  
+}
+  
+@media only screen and (max-width:300px) {
+  
+.main{
+  padding:15px 20px;
+  }
+}
+
+.main{
+  /* opacity: 0;
+  transition: all .5s ease; */
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  background-image: url("http://");
+  background-position: center top; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+
+  span{
+  background:rgba(255,255,255,1);
+  }
+  
+  /* 見出し */
+  h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      vertical-align: baseline;
+  }
+  h2{
+  font-size:12px;
+  color: #FFF;
+  font-family:"Didact Gothic";
+  letter-spacing: 1px;
+  margin: 5px 0px ;
+  padding: 0px 7px 0px 7px;
+  background-color:#b4d2e8;
+  box-shadow: 0px 0px 0px 2px #b4d2e8;
+  border: dashed 1px white;
+  font-weight:300;
+  display: inline-block;
+  position: relative;
+  }
+  
